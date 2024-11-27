@@ -1,41 +1,219 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 100%;
     height: 100vh;
 }
-.container .topo{
+
+.container .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 30px;
+    height: 10%;
 }
-.container .topo .barra-pesquisa{
+
+.container .topo .barra-pesquisa {
     width: 650px;
     padding: 5px 10px;
-    border: 2px solid #cecece;
+    border: 2px solid #2a42ca;
     border-radius: 4px;
 }
-.container .topo .barra-pesquisa .pesquisa{
+
+.container .topo .barra-pesquisa .pesquisa {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.container .topo .barra-pesquisa .pesquisa input{
+
+.container .topo .barra-pesquisa .pesquisa input {
     width: 100%;
     border: none;
     background-color: transparent;
     outline: none;
 }
-.container .topo .perfil{
+
+.container .content {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.container .topo .perfil {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.container .topo .perfil img{
+
+.container .topo .perfil img {
     border-radius: 50%;
 }
+
+.container .sidemenu {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .sidemenu .opcoes {
+    width: 100%;
+    height: auto;
+}
+
+.container .sidemenu .opcoes .opcao {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #5a5a5a;
+    transition: all 300ms ease;
+}
+
+.container .sidemenu .opcoes .opcao .icone {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .sidemenu .opcoes .opcao span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#selected {
+    color: black;
+    border-left: 5px solid #2a42ca;
+}
+
+.container .sidemenu button {
+    width: 70%;
+    height: 30px;
+    border: 0px;
+    background-color: #2a42ca;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.container .sidemenu .opcoes .opcao:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.container .sidemenu .opcoes .opcao .conteudo {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .sidemenu .opcoes .opcao .conteudo i {
+    font-size: 10px;
+}
+
+.container .sidemenu button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: #2a42ca;
+    border: 1px solid #2a42ca;
+    transition: all 300ms ease;
+}
+
+.container .content .maincontent {
+    width: 80%;
+    height: 100%;
+    background-color: #efeeee;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.container .content .maincontent .banner {
+    width: 95%;
+    height: 50px;
+    background-color: #2a42ca;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.container .content .maincontent .banner a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.container .content .maincontent .banner .star {
+    display: flex;
+    color: white;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.container .content .maincontent .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.container .content .maincontent .cards .card {
+    width: 23%;
+    display: flex;
+    height: 80px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    background-color: white;
+}
+.container .content .maincontent .cards .card .esquerda{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .content .maincontent .cards .card .direita{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.container .content .maincontent .cards .card .esquerda .icone{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+}
+#um .esquerda .icone{
+    color: #fa6705;
+
+    background-color: #fbc599;
+}
+#dois .esquerda .icone{
+    color: green;
+    background-color: rgb(135, 226, 135);
+}
+#tres .esquerda .icone{
+    color: blue;
+    background-color: #97a2dd;
+}
+#quatro .esquerda .icone{
+color: darkmagenta;
+background-color: rgb(224, 160, 224);
+} 
