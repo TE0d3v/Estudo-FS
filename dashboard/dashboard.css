@@ -145,6 +145,7 @@ body {
     align-items: center;
     border-radius: 8px;
     padding: 0 15px;
+    margin-left: 11px;
 }
 
 .container .content .maincontent .banner a {
@@ -216,4 +217,65 @@ body {
 #quatro .esquerda .icone{
 color: darkmagenta;
 background-color: rgb(224, 160, 224);
-} 
+}
+.container .content .maincontent .content-tabela{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container .content .maincontent .content-tabela table{
+    width: 100%;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    background-color: white;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+.container .content .maincontent .content-tabela table thead{
+    background-color: #e6e6e6;
+    color: #7b7b7b;
+    height: 30px;
+    font-size: 12px;
+}
+.container .content .maincontent .content-tabela table thead th{
+    text-align: left;
+    padding-left: 7px;
+}
+.container .content .maincontent .content-tabela table tbody{
+    font-size: 12px;
+    color: #464646;
+}
+.container .content .maincontent .content-tabela table tbody tr{
+    border: 1px solid #cecece;
+}
+.container .content .maincontent .content-tabela table tbody tr td .cliente{
+    line-height: 1px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.container .content .maincontent .content-tabela table tbody tr td .status{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+#aprovado{
+    background-color: #bef6a0;
+    color: #548a54;
+}
+#negado{
+    background-color: #ffa0a0;
+    color: red;
+}
+#pendente{
+    background-color: #f0fa94;
+    color: rgb(151, 151, 106);
+}
